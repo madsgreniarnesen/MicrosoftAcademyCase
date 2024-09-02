@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverfarms_PlanEastUS_name": {
+            "value": null
+        },
+        "serverfarms_PlanUKSouth_name": {
+            "value": null
+        },
+        "sites_WebAppCoffeeshopEastUS_name": {
+            "value": null
+        },
+        "sites_WebAppCoffeeshopUKSouth_name": {
+            "value": null
+        },
+        "components_WebAppCoffeeshopEastUS_name": {
+            "value": null
+        },
+        "components_WebAppCoffeeshopUKSouth_name": {
+            "value": null
+        },
+        "storageAccounts_storagecoffeeiamges_name": {
+            "value": null
+        },
+        "trafficManagerProfiles_ContosoCoffeTM_name": {
+            "value": null
+        },
+        "actionGroups_Application_Insights_Smart_Detection_name": {
+            "value": null
+        },
+        "userAssignedIdentities_WebAppCoffeeshop_id_85e7_name": {
+            "value": null
+        },
+        "workspaces_DefaultWorkspace_19065809_1b68_441b_bf6a_5b8ff7775b5a_EUS_externalid": {
+            "value": null
+        },
+        "workspaces_DefaultWorkspace_19065809_1b68_441b_bf6a_5b8ff7775b5a_SUK_externalid": {
+            "value": null
+        }
+    }
+}
