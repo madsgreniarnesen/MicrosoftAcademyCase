@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_ContosoEastUS_name": {
+            "value": null
+        },
+        "sites_contosouksouth_name": {
+            "value": null
+        },
+        "serverfarms_ASP_ContosoCoffee_8640_name": {
+            "value": null
+        },
+        "serverfarms_ASP_ContosoCoffee_9d3b_name": {
+            "value": null
+        },
+        "storageAccounts_contosocoffeestore_name": {
+            "value": null
+        },
+        "trafficManagerProfiles_coffeecontoso_name": {
+            "value": null
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "restorePointCollections_AzureBackup_ftpserver_52777279186460_name": {
+            "defaultValue": "AzureBackup_ftpserver_52777279186460",
+            "type": "String"
+        },
+        "restorePointCollections_AzureBackup_webserver_52777801728576_name": {
+            "defaultValue": "AzureBackup_webserver_52777801728576",
+            "type": "String"
+        },
+        "virtualMachines_ftpserver_externalid": {
+            "defaultValue": "/subscriptions/1fba8135-a8f5-40ed-8ca9-df852de32410/resourceGroups/acmeinc/providers/Microsoft.Compute/virtualMachines/ftpserver",
+            "type": "String"
+        },
+        "virtualMachines_webserver_externalid": {
+            "defaultValue": "/subscriptions/1fba8135-a8f5-40ed-8ca9-df852de32410/resourceGroups/acmeinc/providers/Microsoft.Compute/virtualMachines/webserver",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/restorePointCollections",
+            "apiVersion": "2024-03-01",
+            "name": "[parameters('restorePointCollections_AzureBackup_ftpserver_52777279186460_name')]",
+            "location": "uksouth",
+            "properties": {
+                "source": {
+                    "id": "[parameters('virtualMachines_ftpserver_externalid')]"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Compute/restorePointCollections",
+            "apiVersion": "2024-03-01",
+            "name": "[parameters('restorePointCollections_AzureBackup_webserver_52777801728576_name')]",
+            "location": "uksouth",
+            "properties": {
+                "source": {
+                    "id": "[parameters('virtualMachines_webserver_externalid')]"
+                }
+            }
+        }
+    ]
+}

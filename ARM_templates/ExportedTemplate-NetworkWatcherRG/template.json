@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "networkWatchers_NetworkWatcher_uksouth_name": {
+            "defaultValue": "NetworkWatcher_uksouth",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Network/networkWatchers",
+            "apiVersion": "2024-01-01",
+            "name": "[parameters('networkWatchers_NetworkWatcher_uksouth_name')]",
+            "location": "uksouth",
+            "properties": {}
+        }
+    ]
+}

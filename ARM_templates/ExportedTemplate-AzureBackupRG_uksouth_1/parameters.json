@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "restorePointCollections_AzureBackup_ftpserver_52777279186460_name": {
+            "value": null
+        },
+        "restorePointCollections_AzureBackup_webserver_52777801728576_name": {
+            "value": null
+        },
+        "virtualMachines_ftpserver_externalid": {
+            "value": null
+        },
+        "virtualMachines_webserver_externalid": {
+            "value": null
+        }
+    }
+}

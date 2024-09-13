@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworks_vnet1_name": {
+            "value": null
+        },
+        "virtualMachines_ftpserver_name": {
+            "value": null
+        },
+        "virtualMachines_webserver_name": {
+            "value": null
+        },
+        "bastionHosts_vnet1_Bastion_name": {
+            "value": null
+        },
+        "vaults_acmebackup_name": {
+            "value": null
+        },
+        "azureFirewalls_vnet1_Firewall_name": {
+            "value": null
+        },
+        "networkInterfaces_ftpserver940_name": {
+            "value": null
+        },
+        "networkInterfaces_webserver411_name": {
+            "value": null
+        },
+        "publicIPAddresses_ftpserver_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_vnet1_bastion_name": {
+            "value": null
+        },
+        "storageAccounts_acmelongstorage_name": {
+            "value": null
+        },
+        "publicIPAddresses_vnet1_firewall_name": {
+            "value": null
+        },
+        "networkSecurityGroups_ftpserver_nsg_name": {
+            "value": null
+        },
+        "networkSecurityGroups_webserver_nsg_name": {
+            "value": null
+        }
+    }
+}
